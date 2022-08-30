@@ -1,9 +1,13 @@
+.Marginbot{
+    margin-bottom: 200px;
+}
 .container{
     border: 2px blue solid;
     box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 20px;
 }
 
 .box{
@@ -19,7 +23,7 @@
 
 .container2{
     height: 80px;
-    width: 250px;
+    width: 400px;
     display: flex;
     justify-content: space-around;
     border: 2px purple;
@@ -29,7 +33,38 @@
 }
 .box-small{
     margin: 0px;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     border: 2px red solid;
+    background-image: none;
 }
+
+/* LAYOUT 2 */
+
+.ContenedorL2{
+    border: 4px lightgray solid;
+    padding: 24px;
+}
+
+.Título2{
+    width: 100%;
+    border: 2px solid lightgray;
+    height: 24px;
+    margin-bottom: 24px;
+}
+
+.cajaL2{
+    width: 30%;
+    border: 2px solid lightgray;
+    height: 100px;
+    margin-bottom: 24px;
+}
+
+.contenedor2{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+

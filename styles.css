@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 .Marginbot{
     margin-bottom: 200px;
 }
@@ -42,29 +46,80 @@
 /* LAYOUT 2 */
 
 .ContenedorL2{
-    border: 4px lightgray solid;
-    padding: 24px;
+    border: 4px solid lightgray;
+    padding: 24px 24px 0px 24px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Con esto hacemos que no se estreche tanto los titulos o cajas y que pasados un tamaño maximo se queden así, o se achiquen */
+.rowL2 {
+    width: 100%;
+    max-width: 600px;
+    /* Puedes lograr lo mismo que hacer display:flex y justify-content: center si pones en el row "margin: 0 auto;" */
+    margin: 0 auto;
 }
 
 .Título2{
-    width: 100%;
     border: 2px solid lightgray;
+    width: 100%;
     height: 24px;
     margin-bottom: 24px;
 }
 
 .cajaL2{
+    border: 4px solid lightgray;
     width: 30%;
-    border: 2px solid lightgray;
     height: 100px;
     margin-bottom: 24px;
+    background-image: url("discord.png");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .contenedor2{
-    box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
 }
 
+/* LAYOUT 3*/
+
+.ContenedorG3{
+    border: 4px solid lightgray;
+    padding: 50px;
+}
+
+.rowL3{
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.Contenedor_L3{
+    display: flex;
+    width: 48%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cajaL3{
+    border: 2px solid lightgray;
+    width: 100%;
+    height: 25%;
+    background-image: url("discord.png");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.Cuadro3{
+    border: 2px solid lightgray;
+    width: 48%;
+    height: 250px;
+}
+
+/* Layout 4 */
